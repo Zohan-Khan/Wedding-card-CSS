@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Assignments</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        .nav {
+            margin-bottom: 20px;
+        }
+        .nav a {
+            margin-right: 10px;
+            text-decoration: none;
+            color: blue;
+        }
+        .nav a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>HTML Assignments</h1>
+        <div class="nav">
+            <a href="#task1">Task 1</a>
+            <a href="#task2">Task 2</a>
+            <a href="#task3">Task 3</a>
+            <a href="#task4">Task 4</a>
+        </div>
+        <div id="task1">
+            <h2>Task 1: Novell Services Login</h2>
+            <form>
+                <h2>Novell Services Login</h2>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username"><br><br>
+                
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password"><br><br>
+                
+                <label for="city">City of Employment:</label>
+                <input type="text" id="city" name="city"><br><br>
+                
+                <label for="server">Web server:</label>
+                <select id="server" name="server">
+                    <option value="choose">--Choose a server--</option>
+                </select><br><br>
+                
+                <p>Please specify your role:</p>
+                <input type="radio" id="admin" name="role" value="admin">
+                <label for="admin">Admin</label><br>
+                <input type="radio" id="engineer" name="role" value="engineer">
+                <label for="engineer">Engineer</label><br>
+                <input type="radio" id="manager" name="role" value="manager">
+                <label for="manager">Manager</label><br>
+                <input type="radio" id="guest" name="role" value="guest">
+                <label for="guest">Guest</label><br><br>
+                
+                <p>Single Sign-on to the following:</p>
+                <input type="checkbox" id="mail" name="single_sign_on" value="mail">
+                <label for="mail">Mail</label><br>
+                <input type="checkbox" id="payroll" name="single_sign_on" value="payroll">
+                <label for="payroll">Payroll</label><br>
+                <input type="checkbox" id="self_service" name="single_sign_on" value="self_service">
+                <label for="self_service">Self-service</label><br><br>
+                
+                <input type="submit" value="Login">
+                <input type="reset" value="Reset">
+            </form>
+        </div>
+        <div id="task2">
+            <h2>Task 2: Employee Registration Form</h2>
+            <form class="registration-form">
+                <h1>Employee Registration Form</h1>
+                <div class="title">
+                    <label><input type="radio" name="title" value="mr"> Mr.</label>
+                    <label><input type="radio" name="title" value="mrs"> Mrs.</label>
+                    <label><input type="radio" name="title" value="ms"> Ms.</label>
+                </div>
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" name="first-name">
+                
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" name="last-name">
+                
+                <label for="address1">Mail Address1</label>
+                <input type="text" id="address1" name="address1">
+                
+                <label for="address2">Mail Address2</label>
+                <input type="text" id="address2" name="address2">
+                
+                <label for="city">City</label>
+                <input type="text" id="city" name="city">
+                
+                <label for="state">State</label>
+                <select id="state" name="state">
+                    <option value="gujarat">Gujarat</option>
+                </select>
+                
+                <label for="zip">Zip</label>
+                <input type="text" id="zip" name="zip">
+                
+                <label for="photo">Upload Photo</label>
+                <input type="file" id="photo" name="photo">
+                
+                <label for="email">E-Mail</label>
+                <input type="email" id="email" name="email">
+                
+                <label for="mobile">Mobile</label>
+                <input type="text" id="mobile" name="mobile" placeholder="+91">
+                
+                <div class="languages-known">
+                    <label>Languages known</label>
+                    <label><input type="checkbox" name="languages" value="gujarati"> Gujarati</label><br>
+                    <label><input type="checkbox" name="languages" value="hindi"> Hindi</label><br>
+                    <label><input type="checkbox" name="languages" value="english"> English</label><br>
+                    <label><input type="checkbox" name="languages" value="marathi"> Marathi</label>
+                </div>
+                
+                <label for="additional-info">Additional Information</label>
+                <textarea id="additional-info" name="additional-info" rows="4" cols="50"></textarea>
+                
+                <div class="buttons">
+                    <input type="submit" value="submit">
+                    <input type="reset" value="reset">
+                </div>
+            </form>
+        </div>
+        <div id="task3">
+            <h2>Task 3: HTML List: Ordered, Unordered & Definition List</h2>
+            <div class="section">
+                <h2>HTML List: Ordered, Unordered & Definition List</h2>
+                <p>Following is the list of proposed student activities like:</p>
+                <ol>
+                    <li>Develop programs related with unit vice topics in computer laboratory.</li>
+                    <li>Develop any module of to be useful in real life application.</li>
+                    <li>Multimedia presentation of module developed by students.</li>
+                </ol>
+            </div>
+            <div class="section">
+                <h2>List of Software/Learning Websites</h2>
+                <ul>
+                    <li>
+                        <a href="https://www.w3schools.com/asp">ASP Tutorial - W3Schools</a>
+                        <p>www.w3schools.com/asp</p>
+                    </li>
+                    <li>
+                        <a href="https://www.webwiz.co.uk/knowledgebase">Classic ASP Tutorials & Articles - Web Wiz</a>
+                        <p>www.webwiz.co.uk - Knowledgebase</p>
+                    </li>
+                    <li>
+                        <a href="https://www.w3schools.com/html">HTML Tutorial - W3Schools</a>
+                        <p>www.w3schools.com/html</p>
+                    </li>
+                    <li>
+                        <a href="https://www.csstutorial.net">CSS Tutorial</a>
+                        <p>www.csstutorial.net</p>
+                    </li>
+                    <li>
+                        <a href="https://www.tutorialspoint.com/vbscript/index.htm">VBScript Tutorial - Tutorials Point</a>
+                        <p>www.tutorialspoint.com/vbscript/index.htm</p>
+                    </li>
+                    <li>
+                        <a href="https://www.w3schools.com/ADO/default.asp">ADO Tutorial - W3Schools</a>
+                        <p>www.w3schools.com/ADO/default.asp</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="section">
+                <h2>HTML</h2>
+                <dl>
+                    <dt>HTML</dt>
+                    <dd>Hyper Text Markup Language</dd>
+                </dl>
+            </div>
+        </div>
+        <div id="task4">
+            <h2>Task 4: CSS Styles for Tables</h2>
+            <table border="1" style="width:100%">
+                <thead>
+                    <tr>
+                        <th>Row 1</th>
+                        <th>This is data</th>
+                        <th>This is data</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Row 2</td>
+                        <td>
+                            This is data p<br>
+                            <p>This is data out of p</p>
+                            <b>This is bold data p</b><br>
+                            <b>This is bold data out of p</b><br>
+                            This is normal data after br
+                            <div>Lists in a Table</div>
+                           
